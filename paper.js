@@ -13,7 +13,6 @@
         }
         display(){
         var pos =this.body.position;
-        var angle = this.body.angle;
         push()
         translate(pos.x, pos.y)
         strokeWeight(4)
