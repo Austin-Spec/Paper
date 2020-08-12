@@ -1,14 +1,13 @@
     class Paper {
-    constructor(x, y, width, height) {
+    constructor(x, y, diameter) {
     var options = {
         'isStatic':false,
             'restitution':0.3,
             'friction':0.5,
             'density':1.2,
         }
-        this.body = Bodies.circle(x, y, width, height, options);
-        this.width = width;
-        this.height = height;
+        this.body = Bodies.circle(x, y, diameter, options);
+        this.width = diameter
         
         World.add(world, this.body);
         }
